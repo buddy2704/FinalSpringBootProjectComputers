@@ -1,6 +1,6 @@
 package TheWebsiteThingy.demo;
 
-
+import java.util.Date;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -24,6 +24,6 @@ public class Computer {
     public String name;
     private String cpu;
     private String gpu;
-    private int resolution;
-
+    private int generation;
+    private Date date;
 }

@@ -4,6 +4,7 @@ import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
 import java.util.Optional;
 
 @Service
@@ -30,5 +31,9 @@ public class ComputerService {
             BeanUtils.copyProperties(comp, updatedComp, "id");
             repo.save(updatedComp);
         }
+
+    }
+    public List<Computer> searchComputers(String keyword) {
+        return repo.searchComputers(keyword);
     }
 }
