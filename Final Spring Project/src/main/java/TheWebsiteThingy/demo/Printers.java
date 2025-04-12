@@ -8,4 +8,5 @@ import org.springframework.web.bind.annotation.GetMapping;
 
 @Component
 public class Printers {
+    int print;
 }
